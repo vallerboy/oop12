@@ -12,11 +12,14 @@ public class Starter {
             animal.introduce();
         }
 
-        Canine[] canines = {wolf, dog};
-        for (Canine canine : canines) {
-            canine.bark();
-            System.out.println("My name is: " + ((Animal) canine).getName());
+        Animal[] hoowlers = {wolf, dog};
+        for (Animal animal : hoowlers) {
+            System.out.println("My name is: " + (animal).getName());
+            Canine animalAsCanine =  (Canine) animal;
 
+            animalAsCanine.bark();
         }
+
+        dog.sitPretty();
     }
 }
