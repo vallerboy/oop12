@@ -27,6 +27,10 @@ public class Main {
         printName(managerAsWorker);
         printName(manager);
         printName(boss);
+
+        CanJump jump = boss;
+        jump.jump();
+
     }
 
     public static void printName(Worker worker){
